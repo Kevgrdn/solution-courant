@@ -134,7 +134,7 @@
 
     .hero {
       padding: 5rem 0 3rem;
-      background: linear-gradient(180deg, #f8fafc, #ffffff 60%)
+      /* background: linear-gradient(180deg, #f8fafc, #ffffff 60%) */
     }
 
     .hero-grid {
@@ -529,6 +529,11 @@
       color: #4b5563;
       font-size: .95rem;
     }
+    @media (max-width: 768px) {
+  .badge-mobile-hide {
+    display: none;
+  }
+}
 
     @media (max-width: 900px) {
       .hero-grid {
@@ -539,6 +544,27 @@
         height: 360px;
       }
     }
+    /* Par défaut (desktop/tablette) */
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Mobile : ajuster le breakpoint selon ton design */
+@media (max-width: 768px) {
+  .hero-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+  }
+
+  .hero-actions .btn {
+    flex: 0 1 auto; /* laisse les boutons shrink si nécessaire */
+    white-space: nowrap; /* évite la casse de texte si tu veux */
+  }
+}
   </style>
   <script type="application/ld+json">
 {
@@ -593,7 +619,7 @@
   <main id="accueil" class="hero container">
     <div class="hero-grid">
       <div>
-        <span class="badge">Électricien en Indre-et-Loire - Dépannage, rénovation, neuf</span>
+        <span class="badge badge-mobile-hide">Électricien en Indre-et-Loire - Dépannage, rénovation, neuf</span>
         <h1>Travaux électriques fiables, dépannage rapide et installations aux normes.</h1>
         <p class="lead">Intervention en Indre-et-Loire et départements voisins, avec plus de 30 ans d’expérience pour
           vos projets en rénovation, maison neuve, domotique et climatisation.</p>
@@ -780,13 +806,20 @@
       <h2 class="section-title">Contact</h2>
       <p class="section-sub">Utilisez ce formulaire pour envoyer une demande à Solution Courant.</p>
       <div class="two-col">
-        <form>
+        <!-- <form>
           <input type="text" name="name" placeholder="Nom et prénom" required>
           <input type="email" name="email" placeholder="Adresse email" required>
           <input type="tel" name="phone" placeholder="Téléphone" required>
           <textarea name="message" placeholder="Décrivez votre besoin" required></textarea>
           <button class="btn btn-primary" type="submit">Envoyer la demande</button>
-        </form>
+        </form> -->
+        <form id="contact-form" action="send-email.php" method="POST">
+  <input type="text" name="name" placeholder="Nom et prénom" required>
+  <input type="email" name="email" placeholder="Adresse email" required>
+  <input type="tel" name="phone" placeholder="Téléphone" required>
+  <textarea name="message" placeholder="Décrivez votre besoin" required></textarea>
+  <button class="btn btn-primary" type="submit">Envoyer la demande</button>
+</form>
         <div class="card">
           <h3>Coordonnées</h3>
           <p><strong>Téléphone :</strong> <a href="tel:+33247654712">+33247654712</a></p>
@@ -812,17 +845,30 @@
     </a>
   </p>
 </footer>
-
-  <script>
-    document.querySelector('form')?.addEventListener('submit', e => {
-      e.preventDefault();
-      const formData = new FormData(e.target);
-      const data = Object.fromEntries(formData);
-      console.log('Formulaire soumis:', data);
-      alert('Votre demande a été envoyée.');
-      e.target.reset();
-    });
-  </script>
 </body>
 
+<script>
+  document.querySelector('#contact-form')?.addEventListener('submit', async e => {
+  e.preventDefault();
+  const formData = new FormData(e.target);
+  
+  try {
+    const response = await fetch('send-email.php', {
+      method: 'POST',
+      body: formData
+    });
+    
+    const result = await response.json();
+    
+    if (result.success) {
+      alert('Votre demande a été envoyée.');
+      e.target.reset();
+    } else {
+      alert('Erreur lors de l\'envoi: ' + result.message);
+    }
+  } catch (error) {
+    alert('Erreur de connexion.');
+  }
+});
+</script>
 </html>
