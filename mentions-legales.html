@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mentions légales et CGV | Solution Courant</title>
+    <meta name="description"
+        content="Mentions légales, politique de confidentialité, gestion des cookies et conditions générales de vente de Solution Courant.">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --surface: #f8fafc;
+            --card: #ffffff;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --brand: #f59e0b;
+            --brand2: #38bdf8;
+            --line: rgba(0, 0, 0, .08);
+            --max: 980px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, sans-serif;
+            background: linear-gradient(180deg, #f8fafc, #ffffff 22%);
+            color: var(--text);
+            line-height: 1.7;
+        }
+
+        a {
+            color: #0f766e;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            width: min(var(--max), calc(100% - 2rem));
+            margin: auto;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 40;
+            background: rgba(255, 255, 255, .94);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-weight: 800;
+            letter-spacing: .2px;
+            color: #111827;
+        }
+
+        .logo span {
+            color: var(--brand);
+        }
+
+        .top-links {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+            padding: .85rem 1.15rem;
+            border-radius: 999px;
+            font-weight: 700;
+            border: 1px solid transparent;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--brand), #fbbf24);
+            color: #111827;
+        }
+
+        .btn-secondary {
+            background: #f1f5f9;
+            border-color: rgba(0, 0, 0, .12);
+            color: var(--text);
+        }
+
+        main {
+            padding: 3rem 0 4rem;
+        }
+
+        .hero {
+            padding: 2rem 0 1rem;
+        }
+
+        .badge {
+            display: inline-flex;
+            padding: .4rem .8rem;
+            border: 1px solid rgba(56, 189, 248, .35);
+            border-radius: 999px;
+            color: #0284c7;
+            background: rgba(56, 189, 248, .12);
+            font-size: .92rem;
+        }
+
+        h1 {
+            margin: .9rem 0 .8rem;
+            line-height: 1.08;
+            font-size: clamp(2rem, 4vw, 3.4rem);
+            color: #111827;
+        }
+
+        .lead {
+            color: var(--muted);
+            max-width: 70ch;
+            font-size: 1.04rem;
+        }
+
+        .toc,
+        .card {
+            background: var(--card);
+            border: 1px solid var(--line);
+            border-radius: 22px;
+            box-shadow: 0 8px 28px rgba(0, 0, 0, .05);
+        }
+
+        .toc {
+            padding: 1.25rem;
+            margin: 1.75rem 0 2rem;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+            margin: .8rem 0 0;
+            display: grid;
+            gap: .7rem;
+        }
+
+        .toc a {
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .section {
+            padding: 1.6rem;
+            margin-bottom: 1.15rem;
+        }
+
+        h2 {
+            margin: 0 0 .85rem;
+            font-size: clamp(1.45rem, 2.8vw, 2rem);
+            color: #111827;
+        }
+
+        h3 {
+            margin: 1.2rem 0 .55rem;
+            font-size: 1.08rem;
+            color: #111827;
+        }
+
+        p {
+            margin: 0 0 .95rem;
+        }
+
+        ul {
+            margin: 0 0 1rem;
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: .45rem;
+        }
+
+        .meta {
+            color: var(--muted);
+            font-size: .95rem;
+        }
+
+        .note {
+            padding: 1rem 1.1rem;
+            border-radius: 16px;
+            background: #fff7ed;
+            border: 1px solid rgba(245, 158, 11, .22);
+            color: #7c2d12;
+        }
+
+        footer {
+            padding: 2rem 0 3rem;
+            color: var(--muted);
+            border-top: 1px solid var(--line);
+        }
+
+        @media (max-width: 720px) {
+            .nav {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .top-links {
+                width: 100%;
+            }
+
+            .top-links .btn {
+                width: 100%;
+            }
+
+            main {
+                padding-top: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container nav">
+            <a class="logo" href="./index.html">Solution <span>Courant</span></a>
+            <div class="top-links">
+                <a class="btn btn-secondary" href="./index.html">Retour au site</a>
+                <a class="btn btn-primary" href="tel:+33247654712">Appeler</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <span class="badge">Informations légales et contractuelles</span>
+            <h1>Mentions légales, confidentialité et conditions générales de vente</h1>
+            <p class="lead">Cette page regroupe les informations légales du site vitrine Solution Courant, ainsi que des
+                conditions générales de vente simples pour les prestations d’un artisan électricien intervenant en
+                Indre-et-Loire et dans les secteurs voisins.</p>
+            <p class="meta">Dernière mise à jour : juin 2026.</p>
+        </section>
+
+        <nav class="toc" aria-label="Sommaire">
+            <strong>Sommaire</strong>
+            <ul>
+                <li><a href="#mentions">Mentions légales</a></li>
+                <li><a href="#cgu">Conditions d’utilisation</a></li>
+                <li><a href="#rgpd">Données personnelles</a></li>
+                <li><a href="#cookies">Cookies</a></li>
+                <li><a href="#propriete">Propriété intellectuelle</a></li>
+                <li><a href="#avis">Avis en ligne</a></li>
+                <li><a href="#cgv">Conditions générales de vente</a></li>
+            </ul>
+        </nav>
+
+        <section id="mentions" class="card section">
+            <h2>Mentions légales</h2>
+            <h3>Éditeur du site</h3>
+            <p>Le présent site est édité par <strong>Solution Courant</strong>, activité artisanale d’électricité
+                exploitée par Bertrand Grondin.</p>
+            <ul>
+                <li>Nom commercial : Solution Courant</li>
+                <li>Responsable : Bertrand Grondin</li>
+                <li>Activité : dépannage électrique, rénovation, installation neuve, domotique, climatisation, alarmes
+                </li>
+                <li>Téléphone : <a href="tel:+33247654712">+33 2 47 65 47 12</a></li>
+                <li>Email : <a href="mailto:solution.courant@gmail.com">solution.courant@gmail.com</a></li>
+                <li>Zone principale indiquée sur le site : Sainte-Maure-de-Touraine, Indre-et-Loire et départements
+                    limitrophes</li>
+                <li>SIRET : [à compléter]</li>
+                <li>Adresse du siège : [à compléter]</li>
+                <li>TVA intracommunautaire : [à compléter si applicable]</li>
+            </ul>
+            <h3>Directeur de la publication</h3>
+            <p>Le directeur de la publication est Bertrand Grondin.</p>
+            <h3>Hébergement</h3>
+            <p>Le site est hébergé par : [nom de l’hébergeur], [adresse], [téléphone], [site web].</p>
+            <div class="note">Pense à remplacer tous les champs entre crochets avant mise en ligne définitive.</div>
+        </section>
+
+        <section id="cgu" class="card section">
+            <h2>Conditions d’utilisation</h2>
+            <p>Le site a pour objet de présenter les services proposés par Solution Courant, notamment le dépannage, la
+                rénovation électrique, l’installation neuve, la domotique, la climatisation et les alarmes.</p>
+            <p>L’utilisateur s’engage à utiliser le site conformément aux lois et règlements en vigueur. Toute
+                utilisation frauduleuse, tentative d’intrusion, ou atteinte au bon fonctionnement du site est interdite.
+            </p>
+            <p>Les informations publiées sur le site sont fournies à titre indicatif. Malgré le soin apporté à leur
+                rédaction, Solution Courant ne peut garantir l’absence totale d’erreur, d’omission ou d’indisponibilité
+                temporaire.</p>
+            <p>Solution Courant ne pourra être tenue responsable des dommages directs ou indirects liés à l’utilisation
+                du site, à une interruption de service, à un bogue ou à une incompatibilité technique.</p>
+        </section>
+
+        <section id="rgpd" class="card section">
+            <h2>Données personnelles</h2>
+            <p>Les données susceptibles d’être collectées via le formulaire de contact sont le nom, l’adresse email, le
+                numéro de téléphone et le contenu du message.</p>
+            <p>Ces données sont utilisées uniquement pour répondre à une demande de contact, établir un devis, organiser
+                une intervention, ou assurer le suivi administratif et commercial du dossier.</p>
+            <p>La base légale du traitement repose sur l’exécution de mesures précontractuelles à la demande de la
+                personne concernée, et, le cas échéant, sur l’exécution du contrat.</p>
+            <p>Les données sont conservées pendant la durée nécessaire au traitement de la demande, puis pendant les
+                durées imposées par les obligations légales, comptables ou administratives.</p>
+            <p>Vous disposez d’un droit d’accès, de rectification, d’effacement, de limitation et d’opposition, dans les
+                conditions prévues par la réglementation applicable. Toute demande peut être adressée à <a
+                    href="mailto:solution.courant@gmail.com">solution.courant@gmail.com</a>.</p>
+            <p>En cas de difficulté non résolue, vous pouvez également saisir la CNIL via <a href="https://www.cnil.fr"
+                    target="_blank" rel="noopener noreferrer">cnil.fr</a>.</p>
+        </section>
+
+        <section id="cookies" class="card section">
+            <h2>Cookies</h2>
+            <p>Le site peut utiliser des cookies strictement nécessaires à son fonctionnement technique.</p>
+            <p>À ce jour, si aucun outil de mesure d’audience ou de suivi publicitaire n’est installé, aucun cookie de
+                suivi soumis au consentement n’est déposé.</p>
+            <p>Si un outil de statistiques ou un service tiers nécessitant un consentement est ajouté ultérieurement,
+                une information spécifique et, si nécessaire, un mécanisme de recueil du consentement devront être mis
+                en place.</p>
+        </section>
+
+        <section id="propriete" class="card section">
+            <h2>Propriété intellectuelle</h2>
+            <p>L’ensemble du contenu du site, incluant notamment les textes, visuels, photographies, graphismes,
+                structure, code, logo et éléments de mise en page, est protégé par le droit de la propriété
+                intellectuelle.</p>
+            <p>Sauf mention contraire, ces éléments sont la propriété exclusive de Solution Courant ou sont utilisés
+                avec l’autorisation de leurs titulaires.</p>
+            <p>Toute reproduction, représentation, diffusion, adaptation ou exploitation, totale ou partielle, sans
+                autorisation écrite préalable, est interdite.</p>
+        </section>
+
+        <section id="avis" class="card section">
+            <h2>Avis en ligne</h2>
+            <p>Le site peut afficher ou résumer des avis clients issus d’une fiche Google dédiée à l’activité présentée.
+            </p>
+            <p>Ces avis sont hébergés et gérés par Google. Solution Courant ne maîtrise pas les règles de collecte,
+                d’affichage, de modération ou de classement appliquées par ce service tiers.</p>
+            <p>Le lien menant vers les avis Google permet à l’utilisateur de consulter la source originale sur la
+                plateforme concernée.</p>
+        </section>
+
+        <section id="cgv" class="card section">
+            <h2>Conditions générales de vente</h2>
+            <h3>1. Objet</h3>
+            <p>Les présentes conditions générales de vente définissent les modalités applicables aux prestations
+                réalisées par Solution Courant pour des clients particuliers et professionnels, dans le cadre de travaux
+                électriques, dépannages, installations, rénovations, domotique, climatisation et services associés.</p>
+
+            <h3>2. Devis</h3>
+            <p>Toute prestation peut donner lieu à l’établissement d’un devis préalable. Sauf mention contraire, la
+                durée de validité du devis est de 30 jours à compter de sa date d’émission.</p>
+            <p>La prestation est réputée acceptée à compter de la signature du devis par le client, ou de toute
+                validation écrite claire équivalente.</p>
+
+            <h3>3. Prix</h3>
+            <p>Les prix sont exprimés en euros, avec ou sans TVA selon le régime applicable à l’entreprise au moment de
+                la facturation.</p>
+            <p>Sauf indication contraire, les prix figurant sur le devis incluent uniquement les prestations et
+                fournitures expressément mentionnées. Toute demande complémentaire fera l’objet d’un ajustement ou d’un
+                devis additionnel.</p>
+
+            <h3>4. Délais et intervention</h3>
+            <p>Les délais d’intervention sont donnés à titre indicatif. Ils peuvent varier selon la nature du chantier,
+                la disponibilité des matériels, les conditions d’accès au site, les aléas techniques ou les contraintes
+                extérieures.</p>
+            <p>En cas d’urgence ou de dépannage, Solution Courant s’efforce d’intervenir dans les meilleurs délais, sans
+                garantie d’horaire fixe sauf engagement exprès.</p>
+
+            <h3>5. Obligations du client</h3>
+            <p>Le client s’engage à fournir des informations exactes, à permettre l’accès au chantier ou au lieu
+                d’intervention, et à signaler toute contrainte technique connue pouvant influencer la prestation.</p>
+            <p>Le client s’engage également à assurer un environnement de travail sécurisé et accessible, ainsi qu’à
+                obtenir les autorisations nécessaires lorsque celles-ci relèvent de sa responsabilité.</p>
+
+            <h3>6. Paiement</h3>
+            <p>Sauf mention contraire sur le devis ou la facture, les factures sont payables à réception.</p>
+            <p>Un acompte peut être demandé avant le démarrage des travaux, notamment pour les chantiers, commandes de
+                matériel ou prestations nécessitant une réservation de créneau.</p>
+            <p>En cas de retard de paiement par un client professionnel, des pénalités pourront être appliquées
+                conformément au droit en vigueur, ainsi qu’une indemnité forfaitaire pour frais de recouvrement lorsque
+                celle-ci est applicable.</p>
+
+            <h3>7. Modifications et travaux supplémentaires</h3>
+            <p>Toute modification demandée après acceptation du devis, ou toute prestation rendue nécessaire en cours
+                d’intervention, pourra entraîner une facturation complémentaire après information du client.</p>
+
+            <h3>8. Réserve de propriété</h3>
+            <p>Les matériels, équipements et fournitures vendus restent la propriété de Solution Courant jusqu’au
+                paiement complet de leur prix, dans les limites autorisées par la loi.</p>
+
+            <h3>9. Garantie et responsabilité</h3>
+            <p>Solution Courant exécute ses prestations conformément aux règles de l’art et aux normes applicables au
+                type de travaux concernés.</p>
+            <p>La responsabilité de Solution Courant ne saurait être engagée en cas de dommage résultant d’une mauvaise
+                utilisation, d’une installation préexistante défectueuse non signalée, d’une intervention d’un tiers, ou
+                d’un cas de force majeure.</p>
+            <p>Les garanties légales applicables demeurent pleinement réservées, dans les conditions prévues par le
+                droit français.</p>
+
+            <h3>10. Rétractation</h3>
+            <p>Lorsque le client est un consommateur bénéficiant d’un droit de rétractation en application du Code de la
+                consommation, ce droit s’exerce dans les conditions légales, sauf exception prévue par la
+                réglementation, notamment en cas d’intervention pleinement exécutée avant la fin du délai à la demande
+                expresse du client.</p>
+
+            <h3>11. Litiges</h3>
+            <p>Les présentes CGV sont soumises au droit français. En cas de litige, les parties rechercheront d’abord
+                une solution amiable avant toute action judiciaire.</p>
+            <p>Le client consommateur peut également recourir à un dispositif de médiation de la consommation, sous
+                réserve qu’un médiateur compétent soit désigné par l’entreprise. Coordonnées du médiateur : [à
+                compléter].</p>
+        </section>
+    </main>
+
+    <footer class="container">
+        <p>© 2026 Solution Courant — Électricien en Indre-et-Loire et départements voisins.</p>
+        <p>
+            <a href="./mentions-legales.html" class="small" style="color:#6b7280;">
+                Mentions légales et CGV
+            </a>
+        </p>
+    </footer>
+</body>
+
+</html>
