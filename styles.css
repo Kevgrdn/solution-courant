@@ -67,14 +67,25 @@
       gap: 1rem
     }
  
-    .logo {
-      font-weight: 800;
-      letter-spacing: .2px
-    }
+   .logo {
+  display: inline-flex;
+  flex-direction: column;
+  font-weight: 800;
+  letter-spacing: .2px;
+  line-height: 1.1;
+}
+.logo-main span {
+  color: var(--brand);
+}
 
-    .logo span {
+.logo-sub {
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+    /* .logo span {
       color: var(--brand)
-    }
+    } */
 
     .links {
       display: flex;
