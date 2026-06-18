@@ -1,0 +1,40 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, .95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.logo {
+  font-weight: 800;
+  letter-spacing: .2px;
+}
+
+.logo span {
+  color: var(--brand);
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.links a {
+  color: var(--muted);
+}
+
+.links a:hover {
+  color: var(--brand);
+}

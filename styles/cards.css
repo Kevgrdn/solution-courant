@@ -1,0 +1,29 @@
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 20px;
+  padding: 1.4rem;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, .04);
+  text-align: justify;
+}
+
+.card h3,
+.card h4 {
+  margin-top: 0;
+  color: #111827;
+}
+
+.tags {
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: .4rem .75rem;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, .12);
+  border: 1px solid rgba(56, 189, 248, .25);
+  font-size: .92rem;
+  color: #0284c7;
+}

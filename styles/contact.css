@@ -1,0 +1,33 @@
+.contact {
+  background: linear-gradient(135deg, rgba(245, 158, 11, .08), rgba(56, 189, 248, .08));
+  border: 1px solid rgba(245, 158, 11, .25);
+  border-radius: 26px;
+  padding: 1.6rem;
+}
+
+form {
+  display: grid;
+  gap: 1.1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.1rem 1.15rem;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  background: #ffffff;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--brand);
+  outline: none;
+}
+
+textarea {
+  min-height: 140px;
+  resize: vertical;
+}

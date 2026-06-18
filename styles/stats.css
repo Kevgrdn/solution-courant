@@ -1,0 +1,49 @@
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2.2rem;
+}
+
+.stat {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, .06);
+  border-radius: 18px;
+  padding: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
+}
+
+.stat strong {
+  display: block;
+  font-size: 1.15rem;
+  color: #111827;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, .06);
+}
+
+.panel h2 {
+  margin: 0 0 .75rem;
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: .85rem;
+}
+
+.checklist li {
+  padding: .95rem 1.1rem;
+  background: #f8fafc;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 0, 0, .04);
+}

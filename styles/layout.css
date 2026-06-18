@@ -1,0 +1,33 @@
+.container {
+  width: min(var(--max), calc(100% - 2rem));
+  margin: auto;
+}
+
+section {
+  padding: 3.5rem 0;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .hero-grid,
+  .grid-3,
+  .two-col,
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .links {
+    display: none;
+  }
+}

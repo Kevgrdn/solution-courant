@@ -1,0 +1,22 @@
+.faq details {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 18px;
+  padding: 1.1rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .04);
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #111827;
+}
+
+.faq details + details {
+  margin-top: 1rem;
+}
+
+.faq details p {
+  margin: .8rem 0 0;
+  color: var(--muted);
+}
