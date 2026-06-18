@@ -13,11 +13,12 @@
       box-sizing: border-box
     }
 
-    
-   html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* ou 70/90px selon la hauteur réelle */
-}
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+      /* ou 70/90px selon la hauteur réelle */
+    }
 
     body {
       margin: 0;
@@ -26,14 +27,15 @@
       color: var(--text);
       line-height: 1.6
     }
+
     .zones-map {
-  width: 100%;
-  height: 360px;
-  border-radius: 18px;
-  overflow: hidden;
-  margin-bottom: 1rem;
-  z-index: 0;
-}
+      width: 100%;
+      height: 360px;
+      border-radius: 18px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      z-index: 0;
+    }
 
     a {
       color: inherit;
@@ -67,23 +69,25 @@
       padding: 1rem 0;
       gap: 1rem
     }
- 
-   .logo {
-  display: inline-flex;
-  flex-direction: column;
-  font-weight: 800;
-  letter-spacing: .2px;
-  line-height: 1.1;
-}
-.logo-main span {
-  color: var(--brand);
-}
 
-.logo-sub {
-  font-weight: 500;
-  font-size: 0.85rem;
-  color: var(--muted);
-}
+    .logo {
+      display: inline-flex;
+      flex-direction: column;
+      font-weight: 800;
+      letter-spacing: .2px;
+      line-height: 1.1;
+    }
+
+    .logo-main span {
+      color: var(--brand);
+    }
+
+    .logo-sub {
+      font-weight: 500;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
     /* .logo span {
       color: var(--brand)
     } */
@@ -531,11 +535,16 @@
       color: #4b5563;
       font-size: .95rem;
     }
+
     @media (max-width: 768px) {
-  .badge-mobile-hide {
-    display: none;
-  }
-}
+      .badge-mobile-hide {
+        display: none;
+      }
+
+      hero {
+        padding: 2rem 0 3rem;
+      }
+    }
 
     @media (max-width: 900px) {
       .hero-grid {
@@ -546,24 +555,29 @@
         height: 360px;
       }
     }
+
     /* Par défaut (desktop/tablette) */
-.hero-actions {
-  display: flex;
-  gap: 1rem;
-}
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+    }
 
-/* Mobile : ajuster le breakpoint selon ton design */
-@media (max-width: 768px) {
-  .hero-actions {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; 
-  }
+    /* Mobile : ajuster le breakpoint selon ton design */
+    @media (max-width: 768px) {
+      .hero-actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
 
-  .hero-actions .btn {
-    flex: 0 1 auto; 
-    white-space: nowrap; 
-  }
-}
+      .hero-actions .btn {
+        flex: 0 1 auto;
+        white-space: nowrap;
+      }
+
+      .hero.container{
+        padding: 1rem 0 3rem;
+      }
+    }
