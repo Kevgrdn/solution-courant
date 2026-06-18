@@ -22,7 +22,9 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
   <script type="application/ld+json">
+
 {
   "@context": "https://schema.org",
   "@type": "Electrician",
@@ -61,37 +63,27 @@
 </head>
 
 <body>
-  <!-- <header>
+  <header>
     <div class="container nav">
-      <a class="logo" href="#accueil">Solution <span>Courant</span></a>
+      <div style="display: flex; flex-direction: row; align-items: center; gap: 0.5rem;">
+        <img src="./assets/logo2.png" style="object-fit: cover; max-height: 4.5rem;" alt="Logo Solution Courant">
+        <a class="logo" href="#accueil" style="display: flex; flex-direction: column;">
+          <span class="logo-main">Solution <span>Courant</span></span>
+          <span class="logo-sub" style="font-style: italic;">Electricien certifié</span>
+        </a>
+      </div>
+
       <nav class="links" aria-label="Navigation principale">
-        <a href="#services">Services</a><a href="#zones">Zones</a><a href="#apropos">À propos</a><a
-          href="#faq">FAQ</a><a href="#contact">Contact</a>
+        <a href="#services">Services</a>
+        <a href="#zones">Zones</a>
+        <a href="#apropos">À propos</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
       </nav>
+
       <a class="btn btn-primary" href="tel:+33247654712">Appeler</a>
     </div>
-  </header> -->
-<header>
-  <div class="container nav">
-    <div style="display: flex; flex-direction: row; align-items: center; gap: 0.5rem;">
-      <img src="./assets/logo2.png" style="object-fit: cover; max-height: 4.5rem;" alt="Logo Solution Courant">
-      <a class="logo" href="#accueil" style="display: flex; flex-direction: column;">
-        <span class="logo-main">Solution <span>Courant</span></span>
-        <span class="logo-sub" style="font-style: italic;">Electricien certifié</span>
-      </a>
-    </div>
-
-    <nav class="links" aria-label="Navigation principale">
-      <a href="#services">Services</a>
-      <a href="#zones">Zones</a>
-      <a href="#apropos">À propos</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
-    </nav>
-
-    <a class="btn btn-primary" href="tel:+33247654712">Appeler</a>
-  </div>
-</header>
+  </header>
   <main id="accueil" class="hero container">
     <div class="hero-grid">
       <div>
@@ -121,46 +113,47 @@
     <div class="reviews-grid">
       <article class="review-card">
         <div class="review-header">
-          <div class="review-initials">C</div>
+          <div class="review-initials">N</div>
           <div>
-            <p class="review-name">Client Google</p>
+            <p class="review-name">Nico kb</p>
             <p class="review-date">Avis Google vérifié</p>
           </div>
         </div>
         <p class="review-stars">★★★★★</p>
         <p class="review-text">
-          Intervention rapide et travail très soigné. Les explications sur les
-          travaux à réaliser étaient claires, et le devis respecté.
+          Très bon électricien, serieux et efficace. Sollicité pour la restauration d’un appartement en plein centre
+          ville de Tours, tout s’est très bien passé.
         </p>
       </article>
 
       <article class="review-card">
         <div class="review-header">
-          <div class="review-initials">M</div>
+          <div class="review-initials">B</div>
           <div>
-            <p class="review-name">Client Google</p>
+            <p class="review-name">Bérengère Szymanek</p>
             <p class="review-date">Avis Google vérifié</p>
           </div>
         </div>
         <p class="review-stars">★★★★★</p>
         <p class="review-text">
-          Très bon contact, électricien ponctuel et professionnel. Les travaux
-          de rénovation ont été réalisés proprement, dans les délais annoncés.
+          Artisan intervenu dans le cadre d'une rénovation, a refait toute l'électricité de la cuisine + séjour.
+          Sérieux, ponctuel, travail de qualité.
         </p>
       </article>
 
       <article class="review-card">
         <div class="review-header">
-          <div class="review-initials">P</div>
+          <div class="review-initials">D</div>
           <div>
-            <p class="review-name">Client Google</p>
+            <p class="review-name">De gy.charrieau</p>
             <p class="review-date">Avis Google vérifié</p>
           </div>
         </div>
         <p class="review-stars">★★★★★</p>
         <p class="review-text">
-          Dépannage efficace suite à une panne générale. Explications simples,
-          travail sérieux, je recommande.
+          Très bon professionnel, Ponctuel, travail de qualité, travaux réalisés dans le cadre d'un aménagement de la
+          cuisine d'où dérivation électrique.
+          On peut faire confiance sans crainte.
         </p>
       </article>
     </div>
@@ -228,18 +221,6 @@
     </div>
   </section>
 
-  <!-- <section id="zones" class="container">
-    <h2 class="section-title">Zones d'intervention</h2>
-    <p class="section-sub">Solution Courant intervient en Indre-et-Loire et dans les départements voisins.</p>
-    <div class="card">
-      <div class="tags">
-        <span class="tag">Tours</span><span class="tag">Joué-lès-Tours</span><span
-          class="tag">Chambray-lès-Tours</span><span class="tag">Amboise</span><span class="tag">Chinon</span><span
-          class="tag">Loir-et-Cher</span><span class="tag">Maine-et-Loire</span><span class="tag">Vienne</span><span
-          class="tag">Indre</span>
-      </div>
-    </div>
-  </section> -->
   <section id="zones" class="container">
     <h2 class="section-title">Zones d'intervention</h2>
     <p class="section-sub">
@@ -252,16 +233,10 @@
 
         <div style="flex: 1;">
           <div id="zones-map" class="zones-map"
-          aria-label="Carte des zones d'intervention autour de Sainte-Maure-de-Touraine"></div>
+            aria-label="Carte des zones d'intervention autour de Sainte-Maure-de-Touraine"></div>
           <p class="small">
             Zone indicative : cercle d’environ 80 km autour de Sainte-Maure-de-Touraine.
           </p>
-          <!-- <div class="tags">
-            <span class="tag">Tours</span><span class="tag">Joué-lès-Tours</span><span
-            class="tag">Chambray-lès-Tours</span><span class="tag">Amboise</span><span class="tag">Chinon</span><span
-            class="tag">Loir-et-Cher</span><span class="tag">Maine-et-Loire</span><span class="tag">Vienne</span><span
-            class="tag">Indre</span>
-          </div> -->
         </div>
       </div>
     </div>
@@ -279,29 +254,8 @@
         le respect des normes en vigueur, avec le souci de la sécurité, du confort et de la fiabilité à long terme.
       </p>
     </article>
-    <!-- <article class="card">
-      <h2 class="section-title">Présentation du site</h2>
-      <p>Le site présente les services proposés, les zones d'intervention et les moyens de contact.</p>
-      <p>Les informations sont organisées pour être simples à lire et à comprendre.</p>
-    </article> -->
   </section>
 
-  <!-- 
-  <section id="faq" class="container faq">
-    <h2 class="section-title">Questions fréquentes</h2>
-    <details>
-      <summary>Intervenez-vous en urgence ?</summary>
-      <p>Solution Courant peut intervenir rapidement en cas de panne électrique.</p>
-    </details>
-    <details>
-      <summary>Quels types de travaux réalisez-vous ?</summary>
-      <p>Rénovation, installation neuve, dépannage, domotique et climatisation.</p>
-    </details>
-    <details>
-      <summary>Dans quels secteurs intervenez-vous ?</summary>
-      <p>En Indre-et-Loire et dans les départements voisins indiqués sur cette page.</p>
-    </details>
-  </section> -->
   <section id="faq" class="container faq">
     <h2 class="section-title">Questions fréquentes</h2>
 
@@ -313,15 +267,58 @@
         En cas de doute sur la sécurité, il est préférable d’appeler plutôt que d’attendre.
       </p>
     </details>
-
     <details>
-      <summary>Vos devis sont-ils vraiment gratuits ?</summary>
+      <summary>Combien coûtent vos interventions ?</summary>
       <p>
-        Oui, tous nos devis sont gratuits et sans engagement.
-        Nous prenons le temps d’évaluer votre installation et de vous proposer une solution adaptée avant tout démarrage
-        de travaux.
+        Le coût dépend du type de travaux (dépannage, rénovation, installation neuve),
+        du temps nécessaire et du matériel à prévoir. Dans la plupart des cas, nous
+        proposons un devis détaillé et gratuit avant toute intervention, afin que vous
+        sachiez exactement ce qui est inclus : déplacement, main-d’œuvre et fournitures.
       </p>
     </details>
+
+    <details>
+      <summary>Êtes-vous électricien qualifié et assuré ?</summary>
+      <p>
+        Oui, nous disposons des qualifications nécessaires pour réaliser des travaux
+        d’électricité chez les particuliers et les professionnels, dans le respect
+        des normes en vigueur. Nous sommes également couverts par une assurance
+        professionnelle, ce qui vous protège en cas de problème lié aux travaux.
+      </p>
+    </details>
+
+    <details>
+      <summary>Offrez-vous une garantie sur vos travaux ?</summary>
+      <p>
+        Oui, nos interventions sont couvertes par les garanties légales en vigueur
+        (garantie de bon fonctionnement, responsabilité décennale pour les travaux
+        concernés, etc.). La durée et les conditions de garantie sont précisées sur
+        le devis et la facture, afin que vous sachiez exactement ce qui est couvert.
+      </p>
+    </details>
+
+    <details>
+      <summary>Quel est le délai pour une intervention ?</summary>
+      <p>
+        Pour un dépannage, nous essayons d’intervenir le plus rapidement possible en
+        fonction du planning, avec une priorité pour les pannes urgentes ou les
+        situations dangereuses. Pour des travaux de rénovation ou d’installation,
+        une date d’intervention est fixée avec vous après validation du devis, en
+        tenant compte de vos contraintes et des nôtres.
+      </p>
+    </details>
+
+    <details>
+      <summary>Mon installation est-elle aux normes et en sécurité ?</summary>
+      <p>
+        Nous pouvons vérifier l’état de votre installation électrique, identifier
+        les points non conformes (tableau, protections différentielles, prises,
+        liaisons équipotentielles, etc.) et vous proposer une mise aux normes si
+        nécessaire. En cas de disjoncteur qui saute, d’odeur de brûlé ou de prises
+        qui chauffent, il est fortement conseillé de faire contrôler l’installation.
+      </p>
+    </details>
+
 
     <details>
       <summary>Quels types de travaux réalisez-vous ?</summary>
@@ -332,13 +329,7 @@
       </p>
     </details>
 
-    <details>
-      <summary>Dans quels secteurs intervenez-vous ?</summary>
-      <p>
-        Nous intervenons principalement à Sainte-Maure-de-Touraine, en Indre-et-Loire et dans les départements voisins.
-        N’hésitez pas à nous contacter pour vérifier si votre commune est desservie.
-      </p>
-    </details>
+
 
     <details>
       <summary>Comment se déroule une demande de devis ?</summary>
@@ -346,15 +337,6 @@
         Vous nous contactez par téléphone ou via le formulaire en décrivant votre besoin.
         Nous convenons si nécessaire d’une visite sur place, puis nous vous envoyons un devis détaillé que vous pouvez
         accepter ou refuser librement.
-      </p>
-    </details>
-
-    <details>
-      <summary>Quel est le délai moyen pour une intervention ?</summary>
-      <p>
-        Pour un dépannage, nous essayons d’intervenir le plus rapidement possible selon le planning,
-        avec une priorité pour les situations urgentes. Pour les travaux plus importants, une date est définie avec vous
-        après validation du devis.
       </p>
     </details>
 
@@ -369,15 +351,6 @@
     </details>
 
     <details>
-      <summary>Pouvez-vous mettre mon installation aux normes ?</summary>
-      <p>
-        Oui, nous pouvons vérifier l’état de votre installation, identifier les points non conformes
-        et vous proposer une mise aux normes (tableau, protections différentielles, prises, liaisons équipotentielles,
-        etc.).
-      </p>
-    </details>
-
-    <details>
       <summary>Installez-vous des bornes de recharge pour véhicules électriques ?</summary>
       <p>
         Nous pouvons étudier la faisabilité d’une borne de recharge à domicile
@@ -386,13 +359,7 @@
       </p>
     </details>
 
-    <details>
-      <summary>Proposez-vous une garantie sur vos travaux ?</summary>
-      <p>
-        Oui, nos travaux sont couverts par les garanties légales en vigueur et une assurance professionnelle.
-        Les modalités exactes sont précisées sur le devis et la facture.
-      </p>
-    </details>
+
   </section>
   <section id="contact" class="container">
     <div class="contact">
